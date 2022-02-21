@@ -7,10 +7,10 @@ There are four lectures in total and material for each can be found in the dedic
 
 All of the examples require a working python implementation 
 
-## Suggested ways to get the data
+## Possible ways to get the data
 
 - Download the content of the gitlab repository or single directories as a zip file
-- Import it into your personal gitlab/github
+- Import it directly into your personal gitlab/github
 
 ## Executing the notebooks
 
