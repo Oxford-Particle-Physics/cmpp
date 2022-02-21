@@ -22,3 +22,26 @@ All of the examples require a working python implementation
 For details on the above check out the slides from Lecture 1 "Introduction"
 
 
+## Running the code
+
+There are various ways to run the code.
+
+
+### CERN SWAN
+
+1. Go to [https://swan.cern.ch](https://swan.cern.ch) and log in. You can pick any flavour of VM: it doesn't matter much.
+2. Click on the + button to add a project, and enter `https://gitlab.cern.ch/oxford-physics/cmpp.git`
+3. You can the click on any of the notebooks in the repository
+
+### Google Colab
+
+1. Open [this notebook](https://colab.research.google.com/drive/1ewhewi9h2fVfMno1s9n2lwK4uq2iPEn5) and run it. (You will need to authorize it to access your Google Drive.)
+2. Once you have executed the above, you will have a folder My Drive > OxfordCMPP > cmpp ; open it.
+3. You can then click on any of the notebooks to execute them.
+
+### Docker
+
+
+1. Build the container locally using `docker build -t cmpp docker`
+2. Run the Python Notebook: `docker run --rm -it -p 127.0.0.1:8888:8888/tcp -v $(pwd):/cmpp cmpp:latest /cmpp/docker/runNotebook.sh`
+3. Point your favorite browser to the URL displayed (note: pick the URL with 127.0.0.1 or replace whatever hostname is shown by localhost)
