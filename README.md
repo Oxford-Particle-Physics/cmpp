@@ -12,20 +12,15 @@ All of the examples require a working python implementation
 - Download the content of the gitlab repository or single directories as a zip file
 - Import it directly into your personal gitlab/github
 
-## Executing the notebooks
-
-- If jupyter notebooks is part of your python environment, from the terminal execute `jupyter notebook` from within the desired folder
-- Use CERN Swan environment
-- Use Google Colab environment
-- Use docker
-
-For details on the above check out the slides from Lecture 1 "Introduction"
-
-
 ## Running the code
 
 There are various ways to run the code.
 
+### On your local machine
+
+1. Make sure you have a running python installation including the necessary packages for jupyter notebooks
+2. In your terminal from the desired folder type `jupyter notebook`
+3. A browser window will open with an interactive jupyter notebook session
 
 ### CERN SWAN
 
@@ -40,7 +35,6 @@ There are various ways to run the code.
 3. You can then click on any of the notebooks to execute them.
 
 ### Docker
-
 
 1. Build the container locally using `docker build -t cmpp docker`
 2. Run the Python Notebook: `docker run --rm -it -p 127.0.0.1:8888:8888/tcp -v $(pwd):/cmpp cmpp:latest /cmpp/docker/runNotebook.sh`
