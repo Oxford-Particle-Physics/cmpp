@@ -1,0 +1,33 @@
+Lecture 1 Addendum:
+
+
+Lecture material location:
+https://gitlab.com/oxford-physics/cmpp
+https://gitlab.cern.ch/oxford-physics/cmpp (mirror of the above; if you want to import from CERN's instance of gitlab to your CERN associated gitlab)
+
+
+Installing additional python packages and libraries:
+
+- Some problems with installing mpi4py (package to be able to exploit multiple computing cores) -> not really necessary for this course; if you can't install it don't worry. If you still want to look into this, some help may be found here: https://mpi4py.readthedocs.io/en/stable/install.html
+
+- Some problems with installing ipython-notebook (might be connected to which version of python you are using); this is needed to run jupyter notebooks from your laptop. Suggested steps for troubleshooting:
+-- try typing "jupyter notebook" in your terminal to double check that you don't already have it because it came with another package or installation
+-- try installing it via "pip install notebook"   
+-- if you have Anaconda, try via "conda install -c conda-forge notebook"
+
+
+Alternatives to running stand-alone jupyter on your laptop:
+
+- Run on google colaboratory online hosting service (see slide 29 of 1st lecture slides)
+- Run on CERN SWAN online hosting service (see slide 30 of 1st lecture slides)
+- Run using docker (see slide 31 of 1st lecture slides)
+- as pointed out during the course VSCode can also help with that (we personally have no experience with it): https://code.visualstudio.com/docs/datascience/jupyter-notebooks
+- as there was a question about the Spyder IDE; you can install spyder-notebook (via pip or conda) and run jupyter notebooks from within Spyder: https://docs.spyder-ide.org/current/plugins/notebook.html
+
+
+If you have a really strong aversion against Jupyter there are ways to get around it. For this course jupyter notebooks have the nice advantage of being interactive and seeing changes live, but in your day-to-day research life you will most likely just work with plain python scripts. If you want to do this for this course as well (not tried and tested from our side!):
+
+- If you really don't want to install any jupyter related packages: open the lecture notebooks in an online hosting service (see above) and copy-paste the code into a *.py file
+- Install the nbconvert library to convert ipynb files to py (as far as I understand you still need a working jupyter installation for that but you might as well delete it later): https://nbconvert.readthedocs.io/en/latest/
+
+  
